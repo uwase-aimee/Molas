@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome page</title>
+</head>
+
+
+<body>
+    <header>
+     <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="c:\Users\Admin\3D Objects\Screenshot 2025-05-21 103912.png">
+            </div>
+        </div>
+
+
+        <nav id="itm">
+            <a href="welcome page.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">skills</a>
+            <a href="blogs.html">blogs</a>
+            <a href="signup.html">signup</a>
+        </nav>
+
+
+     </div>
+    </header>
+    <h2></h2>
+   
+     <div class="container">
+         <!-- <textarea id="text" placeholder="write here message" rows="5"></textarea><br><br> --> 
+          <textarea name="" id="text" placeholder="write here" rows="5"></textarea><br><br>
+           <button onclick="add()">Post</button>
+            <button onclick="delt()">Delete</button> 
+        </div> <p id="pp"></p>
+
+         <script src=..pages/jo.js></script>  
+         <script>
+          function add(){ var text = document.getElementById("text").value; 
+          var p = document.getElementById("pp");
+           p.innerHTML += "<p>" + text + "</p>";
+            document.getElementById("text").value = ""; 
+            } 
+            
+            function delt(){ 
+                var p = document.getElementById("pp");
+                 p.innerHTML = ""; 
+                 }
+                  </script>
+
+</body>
+
+
+<footer>
+    &COPY;2025 Molas#;
+    <p>contact us on:</p>
+    <p>Email:Molas@gmail.com</p>
+    <p>tel:0788888888</p>
+</footer> 
+
+
+<style>
+    body{
+       background-image: url(assts/hrt.png);
+       padding: 20px;
+       position:fixed;
+    }
+
+
+    main{
+        padding: 10px;
+        margin: 10%;
+    }
+
+
+
+    #itm{
+        margin-left: 1300px;
+        margin-top: -80px;
+    }
+
+
+    nav a{
+        /* margin-left: 1000px; */
+        color:rgb(180, 66, 209);
+        /* padding-left: 5px; */
+        font-size: 20px;
+        justify-content:space-between ;
+    }
+
+
+    footer {
+        padding: 10px;
+        text-align: center;
+        color: rgb(159, 99, 228);
+        /* margin-left: 100px;
+        margin-right: 1000px; */
+        background-color: rgb(21, 12, 46);
+        margin-top:400px;
+    }
+
+
+    
+    
+</style>
+</html>
